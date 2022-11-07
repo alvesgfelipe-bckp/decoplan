@@ -1,0 +1,35 @@
+.barra-do-topo,
+.barra-do-fundo {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  padding: 8px;
+}
+
+.barra-do-topo > .container,
+.barra-do-fundo > .container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.barra-do-topo__texto {
+  color: #f85a5a;
+  margin-right: 8px;
+}
+
+.barra-do-topo__link {
+  color: #ffffff;
+  margin-left: 8px;
+  text-decoration: none;
+}
+
+.barra-do-fundo__link {
+  color: #f85a5a;
+  text-decoration: none;
+}
+
+@media (max-width: 414px) {
+  .barra-do-topo {
+    display: none;
+  }
+}
