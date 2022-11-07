@@ -1,0 +1,130 @@
+@media (max-width: 768px) {
+  .banner {
+    background: url("../imgs/banner/fundo/mobile/fundo.jpg") no-repeat;
+  }
+
+  .banner > .container {
+    flex-direction: column;
+    padding: 32px 0;
+  }
+
+  .banner-esquerda {
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner {
+    background: url("../imgs/banner/fundo/tablet/fundo.jpg") no-repeat;
+  }
+
+  .banner > .container {
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .banner-esquerda,
+  .banner-direita {
+    min-height: 342px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1364px) {
+  .banner {
+    background: url("../imgs/banner/fundo/desktop/fundo.jpg") no-repeat;
+  }
+}
+
+.banner {
+  background-size: cover;
+}
+
+.banner > .container {
+  display: flex;
+}
+
+.banner-esquerda,
+.banner-direita {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+  text-align: center;
+}
+
+.banner-esquerda__titulo {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.banner-esquerda__subtitulo {
+  color: rgba(255, 255, 255, 0.678);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.banner-direita__texto {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.banner-direita__texto > span {
+  border-bottom: solid 2px #f85a5a;
+  color: rgba(255, 255, 255, 0.678);
+  font-size: 16px;
+  font-weight: 400;
+  white-space: nowrap;
+  width: min-content;
+}
+
+.banner-direita__bandeiras {
+  display: flex;
+  justify-content: center;
+  padding: 8px 0;
+}
+
+.banner-direita__bandeiras > div {
+  background-color: rgba(255, 255, 255, 0.278);
+  border-radius: 8px;
+  padding: 8px 32px;
+  white-space: nowrap;
+  width: min-content;
+}
+
+.banner-direita__bandeiras img {
+  margin-right: 16px;
+}
+
+.banner-direita__bandeiras img:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 356px) {
+  .banner-direita__bandeiras > div {
+    display: grid;
+    gap: 16px;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .banner-direita__bandeiras img {
+    margin: 0;
+  }
+}
+
+@media (max-width: 246px) {
+  .banner-direita__bandeiras > div {
+    display: grid;
+    gap: 16px;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
