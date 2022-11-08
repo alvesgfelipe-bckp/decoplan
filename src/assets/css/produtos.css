@@ -62,7 +62,7 @@
   border-radius: 16px;
   color: #ffffff;
   display: block;
-  outline: 2px solid transparent;
+  outline: 4px solid transparent;
   padding: 8px 16px;
   text-align: center;
   text-decoration: none;
@@ -75,9 +75,9 @@
 }
 
 .produto__fundo__botao:active {
-  outline-color: #f85a5a;
+  outline-color: #f85a5a94;
   outline-style: solid;
-  outline-width: 2px;
+  outline-width: 4px;
 }
 
 @media (max-width: 576px) {
