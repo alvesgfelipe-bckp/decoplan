@@ -28,6 +28,10 @@
   text-decoration: none;
 }
 
+.barra-do-fundo__link > span {
+  color: #ffffff;
+}
+
 @media (max-width: 414px) {
   .barra-do-topo {
     display: none;
